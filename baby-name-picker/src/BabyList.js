@@ -1,13 +1,13 @@
 
 
-const BabyList = ({ data, item }) => {
+const BabyList = ({ data, handleClick }) => {
   return (
     <ul className="list">
-      {data.map((name, click) => {
-        let babySex = name.sex === "m" ? "baby-boy" : "baby-girl";
+      {data.map((name, item) => {
+        let babySex = name.sex === "m" ? "babygirl" : "babyboy";
         return (
           <li
-            onClick={() => click(name)}
+            onClick={() => handleClick(name)}
             key={item}
             className={`list-item ${babySex}`}
           >

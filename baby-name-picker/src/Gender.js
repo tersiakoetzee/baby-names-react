@@ -1,18 +1,16 @@
-
-
 const Gender = (props) => {
-    const genderType =
-      props.gender === "b"
-        ? `Both female & male names`
-        : props.gender === "f"
-        ? `Displaying girl names only`
-        : `Displaying boy names only`;
+  const genderType =
+    props.gender === "b"
+      ? `Both Female & Male Names`
+      : props.gender === "f"
+      ? `Displaying girl names only`
+      : `Displaying boy names only`;
   return (
-    <div>
-      <fieldset>
+    <div className="genderContainer">
+      <form>
         <legend>{genderType}</legend>
 
-        <div className="radio">
+        <label htmlFor="Both">
           <input
             type="radio"
             name="Both"
@@ -20,10 +18,10 @@ const Gender = (props) => {
             checked={props.gender === "b" ? true : false}
             onChange={props.handleOnchange}
           />
-          <label htmlFor="Both">Both</label>
-        </div>
+          Both
+        </label>
 
-        <div className="radio-control">
+        <label htmlFor="Female">
           <input
             type="radio"
             name="Male"
@@ -31,10 +29,10 @@ const Gender = (props) => {
             checked={props.gender === "m" ? true : false}
             onChange={props.handleOnchange}
           />
-          <label htmlFor="Female">Female</label>
-        </div>
+          Female
+        </label>
 
-        <div className="radio-control">
+        <label htmlFor="Male">
           <input
             type="radio"
             name="Female"
@@ -42,9 +40,9 @@ const Gender = (props) => {
             checked={props.gender === "f" ? true : false}
             onChange={props.handleOnchange}
           />
-          <label htmlFor="Male">Male</label>
-        </div>
-      </fieldset>
+          Male
+        </label>
+      </form>
     </div>
   );
 };

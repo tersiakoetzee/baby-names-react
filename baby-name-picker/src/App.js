@@ -58,20 +58,25 @@ function App() {
 
   return (
     <div className="App">
-      <GenderFilter
-        gender={filteredGender}
-        handleOnchange={handleGenderInputOnChange}
-      />
-      <SearchBar handleOnChange={handleInputFieldOnChange} input={inputField} />
-      <Favorites
-        data={Favorite}
-        removeFavName={handleRemoveNameFromFavClick}
-      />
-      <BabyList
-        data={filteredBabyNames}
-        handleClick={handleAddNameToFavClick}
-      />
-      <hr />
+      <div className="test">
+        <GenderFilter
+          gender={filteredGender}
+          handleOnchange={handleGenderInputOnChange}
+        />
+        <SearchBar
+          handleOnChange={handleInputFieldOnChange}
+          input={inputField}
+        />
+        <Favorites
+          data={Favorite}
+          removeFavName={handleRemoveNameFromFavClick}
+        />
+        <BabyList
+          data={filteredBabyNames}
+          handleClick={handleAddNameToFavClick}
+        />
+        <hr />
+      </div>
     </div>
   );
 }

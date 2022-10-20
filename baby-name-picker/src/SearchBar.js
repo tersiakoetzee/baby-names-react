@@ -1,7 +1,7 @@
 const SearchBar = ({ handleOnChange, input }) => {
   return (
-    <div className="searchBar-container">
-      <label className="searchBar-label" htmlFor="name">
+    <div className="searchBarContainer">
+      <label className="searchBarLabel" htmlFor="name">
         Search:
       </label>
       <input

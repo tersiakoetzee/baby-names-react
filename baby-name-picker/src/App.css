@@ -1,11 +1,83 @@
 .App {
   text-align: center;
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.test {
+  border: solid 5px;
+  border-radius: 10px;
+  border-color: rgb(244, 154, 228) rgb(244, 154, 228) rgb(98, 160, 241) rgb(98, 160, 241);
+  padding: 20px;
 }
+
+.genderContainer {
+  border: solid 5px;
+  border-color: rgb(98, 160, 241) rgb(98, 160, 241) rgb(244, 154, 228) rgb(244, 154, 228);
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: 700;
+  margin: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.searchBar-input {
+  border-radius: 5px;
+  border-color: rgb(98, 160, 241) rgb(98, 160, 241) rgb(244, 154, 228) rgb(244, 154, 228);
+  height: 30px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  display: inline;
+  padding: 0.75rem;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.babyboy {
+  background-color: rgb(252, 170, 215);
+  color: rgb(244, 6, 220);
+}
+
+.babygirl {
+  background-color: #61dafb;
+  color: rgb(24, 4, 201);
+}
+
+.fav-title {
+  font-weight: 700;
+  margin: 5px;
+  margin-left: 5px;
+}
+
+.favNames-wrapper {
+  text-decoration: underline;
+}
+
+.searchBarLabel {
+  font-weight: 700;
+  margin: 5px;
+}
+
+.searchBarContainer {
+  align-content: center;
+  margin: 5px;
+}
+
+
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,25 +85,11 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
